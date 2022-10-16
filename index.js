@@ -12,8 +12,15 @@ function calculateAmount(e) {
     }
 
     let amountPerPerson = bill/people;
-    let tipPerPerson = bill * tip / people
+    document.querySelector("#dividedBill").textContent = amountPerPerson;
+
+    let tipPerPerson = bill * tip / people;
+    document.querySelector("#dividedTip").textContent = tipPerPerson;
+
     let totalAmountPerPerson = amountPerPerson + tipPerPerson;
+    document.querySelector("#dividedTotal").textContent = totalAmountPerPerson;
+
+    
 
 }
 
