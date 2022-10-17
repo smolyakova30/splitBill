@@ -16,6 +16,8 @@ body{
     border-radius: 40px;
     color: white;
     font-family: 'Kalam', cursive;
+    margin: auto;
+    margin-top: 40px;
 }
 
 form {
@@ -72,4 +74,41 @@ input{
      border-radius: 10px;
      border: 1px solid black;
     
+}
+
+@media all and (max-width:800px){
+    #container {
+        width: 400px;
+        height: 1025px;
+        flex-wrap: nowrap;
+        
+      
+    }
+
+    #totalAmountToPay {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+
+@media all and (max-width:400px){
+    #container {
+        width: 250px;
+        height: 1125px;
+        flex-wrap: nowrap;
+        
+      
+    }
+
+    #totalAmountToPay {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #tip{
+        width: 100px;
+    }
 }
