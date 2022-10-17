@@ -21,6 +21,7 @@ function calculateAmount(e) {
             title: 'Oops...',
             text: 'Enter your information!',
           })
+          document.querySelector("#dividedBill").textContent = amountPerPerson.style.display = "none";
     }
 
     let amountPerPerson = bill/people;
